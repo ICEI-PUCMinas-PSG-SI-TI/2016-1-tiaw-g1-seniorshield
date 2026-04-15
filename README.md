@@ -1,19 +1,20 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`GOLPES DIGITAIS EM IDOSOS`  
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`
+`ADS E SI`
 
-`SEMESTRE`
+`PRIMEIRO`
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
+Glenda K.M. da Conceição
+Ilone. L.D. Moreira
+Pedro S. Godinho
+Arthur G.A. Valente
+Vinícius J.F Matosinhos 
 
 # Estrutura do Projeto
 
