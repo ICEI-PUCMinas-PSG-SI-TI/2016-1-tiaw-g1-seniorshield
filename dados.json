@@ -1,6 +1,6 @@
 {
   "projeto": "Senior Shield",
-  "golpes_catalogados": [
+  "botoes_de_acoes_rapidas": [
     {
       "id": "loja",
       "titulo": "Desconfio de loja falsa",
