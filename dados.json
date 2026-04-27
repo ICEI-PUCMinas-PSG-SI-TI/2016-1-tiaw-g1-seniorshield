@@ -1,4 +1,5 @@
 {
+  "projeto": "Senior Shield",
   "golpes_catalogados": [
     {
       "id": "loja",
@@ -29,15 +30,14 @@
       "link": "https://web.whatsapp.com/"
     }
   ],
-  "formulario_relato_usuario": {
-    "descricao": "Área para o idoso cadastrar um novo golpe que identificou",
-    "campos_input": [
-      { "id": "user_titulo", "label": "Qual o nome do golpe?", "tipo": "text" },
-      { "id": "user_sinais", "label": "Quais sinais você percebeu? (Separe por vírgula)", "tipo": "text" },
-      { "id": "user_descricao", "label": "Conte o que aconteceu", "tipo": "textarea" },
-      { "id": "user_data", "label": "Quando aconteceu?", "tipo": "date" }
+  "area_cadastro_usuario": {
+    "titulo": "Cadastrar Novo Relato de Golpe",
+    "campos": [
+      { "id": "user_nome", "label": "Seu Nome", "tipo": "text" },
+      { "id": "user_titulo_golpe", "label": "Título do ocorrido", "tipo": "text" },
+      { "id": "user_sinais", "label": "Quais sinais você notou?", "tipo": "text" },
+      { "id": "user_descricao", "label": "Descrição detalhada", "tipo": "textarea" }
     ],
-    "botao_salvar": "Enviar para análise do Netinho"
-  },
-  "historico_relatos": []
+    "botao": "Enviar para o Netinho"
+  }
 }
