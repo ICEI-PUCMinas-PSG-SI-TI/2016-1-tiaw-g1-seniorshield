@@ -39,5 +39,46 @@
     ],
     "botao_salvar": "Enviar para análise do Netinho"
   },
-  "historico_relatos": []
+  "historico_relatos": [],
+  "checklist": {
+    "id": 1,
+    "tipo": ["WhatsApp", "SMS", "E-mail", "Telefone"],
+
+    "sinais": [
+      "pediu_dinheiro",
+      "fingiu_ser_um_familiar",
+      "fingiu_ser_um_banco",
+      "usou_urgencia",
+      "numero_desconhecido",
+      "link_suspeito",
+      "mensagem_erro_portugues",
+      "oferta_irreal"
+    ],
+
+    "seguranca_dados": [
+      "pediu_senha",
+      "pediu_codigo",
+      "pediu_dados_pessoais",
+      "link_download"
+    ],
+
+    "pontuacao": 4,
+    "nivel_risco": "Alto"
+  },
+
+  "niveis_risco": [
+    {
+      "nivel": "Baixo",
+      "mensagem": "Não foram identificados sinais claros de golpe, mas mantenha atenção e confirme as informações com alguém de confiança."
+    },
+    {
+      "nivel": "Médio",
+      "mensagem": "Essa situação pode ser suspeita. Tenha cuidado e confirme as informações com alguém de confiança antes de continuar."
+    },
+    {
+      "nivel": "Alto",
+      "mensagem": "Essa situação parece perigosa. Não envie dinheiro nem compartilhe seus dados. Fale com alguém de confiança ou procure seu banco antes de tomar qualquer decisão."
+    }
+  ]
+}
 }
