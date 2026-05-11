@@ -1,0 +1,51 @@
+
+/* Estilize os botões usados ​​para abrir e fechar o painel recolhível */
+.accordion {
+  background-color: #1e72a7;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.4s;
+}
+
+/* Adicione uma cor de fundo ao botão se ele receber clique (adicione a classe .active com JS) e quando você passar o mouse sobre ele (hover) */
+.active, .accordion:hover {
+  background-color: #2c83b9;
+}
+
+/* Estilize o painel accordion. Nota: oculto por padrão */
+.painel {
+  padding: 18px;
+  margin: 12px;
+  background-color: #e4eeff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #bcd7e9;
+  border-style: solid;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\002b'; /*  (+) */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* (-) */
+}
+
+#titulo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e72a7;
+}

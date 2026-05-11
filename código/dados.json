@@ -1,0 +1,52 @@
+{
+  "principais_tipos_de_golpe": [
+    {
+      "id": "fraude-de-consumo",
+      "titulo": "Lojas e Ofertas Falsas",
+      "descricao_detalhada": "O golpe da loja falsa é uma fraude onde criminosos criam sites ou perfis em redes sociais que imitam lojas legítimas, oferecendo produtos a preços muito baixos para atrair vítimas. Usam manipulação psicológica para criar urgência, fazendo com que o idoso compre sem conferir a segurança do site.",
+      "sinais_principais": [
+        "Preço muito abaixo do normal",
+        "Site sem CNPJ ou telefone",
+        "Sem avaliações de clientes reais"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "como-usar-reclame-aqui"
+    },
+    {
+      "id": "afetivo",
+      "titulo": "Golpe do Parceiro Virtual",
+      "descricao_detalhada": "Nesta fraude, os golpistas criam perfis falsos e conquistam a confiança e o afeto da vítima através de conversas diárias. Após estabelecer um laço emocional, eles inventam situações de emergência ou viagens para pedir dinheiro, aproveitando-se da solidariedade e carência do idoso.",
+      "sinais_principais": [
+        "Qualidade de imagem muito perfeita",
+        "Nunca aceita fazer videochamadas",
+        "Pede dinheiro para urgências médicas"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "verificar-imagem-no-google"
+    },
+    {
+      "id": "autoridade",
+      "titulo": "Falso Banco ou INSS",
+      "descricao_detalhada": "Os criminosos fingem ser funcionários de instituições de confiança. Eles alegam que a conta bancária foi invadida ou que o benefício será bloqueado, usando o medo para paralisar a vítima e convencê-la a transferir valores para uma suposta 'conta de segurança'.",
+      "sinais_principais": [
+        "Ligação de número desconhecido",
+        "Pedido de senhas ou biometria",
+        "Pressão para resolver na hora"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "bloquear-contatos-desconhecidos"
+    },
+    {
+      "id": "identidade",
+      "titulo": "Roubo de Dados (Prova de Vida)",
+      "descricao_detalhada": "O foco é assumir o controle dos acessos da vítima. Criminosos enviam links falsos fingindo ser a 'Prova de Vida Digital' do governo. Ao clicar e fornecer dados ou fotos, o idoso acaba entregando o acesso de suas contas bancárias e do portal Gov.br aos golpistas.",
+      "sinais_principais": [
+        "Mensagem urgente sobre benefício",
+        "Link que pede fotos do rosto",
+        "Mensagem pedindo código enviado por SMS"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "como-usar-app-meu-inss"
+    }
+  ]
+}
