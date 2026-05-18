@@ -1,0 +1,40 @@
+[
+  [
+    {
+      "registro_golpes_sofridos": [
+        {
+          "id_golpe": "1",
+          "nome": "Elisangela Rodrigues Matos",
+          "id": "fraude-de-consumo",
+          "email": "elisangela.rodrigues.matos@email.com",
+          "valor_perdido": "R$ 1.500,00",
+          "data_ocorrencia": "2024-05-10"
+        },
+        {
+          "id_golpe": "2",
+          "nome": "Roberto Afonso Neto",
+          "id": "afetivo",
+          "email": "roberto.afonso.neto@email.com",
+          "valor_perdido": "R$ 500,00",
+          "data_ocorrencia": "2024-04-11"
+        },
+        {
+          "id_golpe": "3",
+          "nome": "Mônica Silva Pereira",
+          "id": "autoridade",
+          "email": "monica.silva.pereira@email.com",
+          "valor_perdido": "R$ 850,00",
+          "data_ocorrencia": "2024-05-18"
+        },
+        {
+          "id_golpe": "1",
+          "nome": "Josefa Lima Costa",
+          "id": "identidade",
+          "email": "josefa.lima.costa@email.com",
+          "valor_perdido": "R$ 150,00",
+          "data_ocorrencia": "2024-03-11"
+        }
+      ]
+    }
+  ]
+]
