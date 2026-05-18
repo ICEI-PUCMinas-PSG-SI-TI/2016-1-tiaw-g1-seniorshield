@@ -1,72 +1,57 @@
-var acc = document.getElementsByClassName("accordion");
+// Seleciona o formulário pelo ID
+const formulario = document.getElementById('form-registrar-golpe');
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Altera a classe active */
-    this.classList.toggle("active");
-	
-    /* Alternar entre ocultar e mostrar o painel da descrição do golpe */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-
-//---------------------------------//
-
-fetch('dados.json')
-  .then(response => response.json())
-  .then(dados => {
-    const golpes = dados[0][0].principais_tipos_de_golpe;
-
-    for (let i = 0; i < golpes.length; i++) {
-      
+// "Escuta" o evento de envio (submit) do formulário
+formulario.addEventListener('submit', function(event) {
     
-      document.getElementById(`descricao-do-golpe${i+1}`).innerHTML = golpes[i].descricao_detalhada;
+    // Impede a página de recarregar
+    event.preventDefault();
 
-      
-      let listaSinais = '';
-      for (let a = 0; a < golpes[i].sinais_principais.length; a++) {
-        listaSinais += `<li>${golpes[i].sinais_principais[a]}</li>`;
-      }
+    // 1. Coleta os dados digitados nos campos
+    const nome = document.getElementById('nome-completo').value;
+    const email = document.getElementById('email').value;
+    const golpeSofrido = document.getElementById('golpe-sofrido').value;
+    const valorPerdido = document.getElementById('valor-perdido').value;
+    const dataOcorrencia = document.getElementById('data-ocorrencia').value;
 
-    
-      document.getElementById(`sinais-do-golpe${i+1}`).innerHTML = `
-        <ul>
-          <strong>SINAIS:</strong>
-          ${listaSinais}
-        </ul>
-      `;
-     
-      document.getElementById(`golpe-${i+1}`).innerHTML=`${golpes[i].titulo}`
-       
-      document.getElementById(`link-tutorial-abaixo`).innerHTML=
-      `${golpes[i].texto_chamada_tutorial}`
-      document.getElementById(`link-${i+1}`).href=`${golpes[i].tutorial_slug}`; 
+    // 2. Faz uma leitura (GET) no servidor para saber quantos golpes já existem
+    fetch('http://localhost:3000/registro_golpes_sofridos')
+        .then(response => response.json())
+        .then(golpesExistentes => {
+            
+            // Calcula o próximo id_golpe (tamanho da lista + 1) e transforma em texto
+            const proximoIdGolpe = String(golpesExistentes.length + 1);
 
-     
+            // 3. Monta o pacote de dados com o número sequencial automático!
+            const novoGolpe = {
+                id_golpe: proximoIdGolpe,
+                nome: nome,
+                tipo_golpe: golpeSofrido, // Usamos 'tipo_golpe' no lugar de 'id' para evitar erros
+                email: email,
+                valor_perdido: valorPerdido,
+                data_ocorrencia: dataOcorrencia
+            };
 
-      
-    }
-    
-    const descricao= dados[1][0].descrições;
-
-    document.getElementById(`descricao-geral`).innerHTML=
-    `${descricao[0].descrição_principal}`;
-
-    document.getElementById(`fim_pagina`).innerHTML=`${descricao[0].descrição_secundária}`
-
-
-
-  }
-
-
-
-)
-  .catch(error => console.error('Erro ao carregar o JSON:', error));
-  
-
+            // 4. Envia (POST) o novo pacote para o servidor
+            return fetch('http://localhost:3000/registro_golpes_sofridos', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(novoGolpe)
+            });
+        })
+        .then(response => {
+            if (response.ok) {
+                // Se o servidor aceitou, avisa o idoso e limpa o formulário
+                alert("Muito obrigado! O golpe foi registrado com sucesso e ajudará a comunidade.");
+                formulario.reset(); 
+            } else {
+                alert("Poxa, ocorreu um erro ao registrar. Tente novamente mais tarde.");
+            }
+        })
+        .catch(error => {
+            console.error("Erro na requisição:", error);
+            alert("Erro de conexão. Verifique se o JSON Server está rodando no terminal.");
+        });
+});
