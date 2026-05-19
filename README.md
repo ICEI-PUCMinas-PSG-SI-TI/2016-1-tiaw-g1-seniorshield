@@ -1,0 +1,52 @@
+# Informações do Projeto
+`GOLPES DIGITAIS EM IDOSOS`  
+
+Trabalho Interdisciplinar - Aplicacões Web
+
+`ADS E SI`
+
+`PRIMEIRO`
+
+## Participantes
+
+Os membros do grupo são: 
+Glenda K.M. da Conceição
+Ilone. L.D. Moreira
+Pedro S. Godinho
+Arthur G.A. Valente
+Vinícius J.F Matosinhos 
+
+# Estrutura do Projeto
+
+1. [Contexto](./docs/1-Contexto.md)
+2. [Especificações do Projeto](./docs/2-Especificação.md)
+3. [Projeto da Interface](./docs/3-Interface.md)
+4. [Gerenciamento do Projeto](./docs/4-Gerenciamento-Projeto.md)
+5. [Implementação](./docs/5-Implementação.md)
+6. [Referências](./docs/8-Referências.md)
+7. [Apresentação do trabalho](./docs/apresentacao) 
+
+
+
+## Pasta docs
+
+Esta pasta arquiva a documentação dos projetos.
+
+
+Na pasta `docs`, há uma subpasta `images` que deve arquivar todas as
+imagens utilizadas para a elaboração do documento.
+
+
+## Pasta src
+
+Este diretório armazena o código fonte do projeto e adota uma hierarquia
+básica de projetos Web simples, que utilizam as tecnologias HTML, CSS e
+JavaScript.
+
+### Links Úteis:
+
+Aprenda Markdown e use-o para documentar o projeto  
+
+> [Sintaxe básica de gravação e formatação no GitHub](https://guides.github.com/features/mastering-markdown/)
+
+> [Suporte Github](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
