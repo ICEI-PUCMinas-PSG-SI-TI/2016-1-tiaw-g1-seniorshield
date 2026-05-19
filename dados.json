@@ -39,46 +39,48 @@
     ],
     "botao_salvar": "Enviar para análise do Netinho"
   },
-  "historico_relatos": [],
-  "checklist": {
-    "id": 1,
-    "tipo": ["WhatsApp", "SMS", "E-mail", "Telefone"],
-
-    "sinais": [
-      "pediu_dinheiro",
-      "fingiu_ser_um_familiar",
-      "fingiu_ser_um_banco",
-      "usou_urgencia",
-      "numero_desconhecido",
-      "link_suspeito",
-      "mensagem_erro_portugues",
-      "oferta_irreal"
-    ],
-
-    "seguranca_dados": [
-      "pediu_senha",
-      "pediu_codigo",
-      "pediu_dados_pessoais",
-      "link_download"
-    ],
-
-    "pontuacao": 4,
-    "nivel_risco": "Alto"
-  },
-
-  "niveis_risco": [
+  "perguntas": [
     {
-      "nivel": "Baixo",
-      "mensagem": "Não foram identificados sinais claros de golpe, mas mantenha atenção e confirme as informações com alguém de confiança."
+      "id": "1",
+      "texto": "Você recebeu uma ligação de alguém dizendo ser do seu banco pedindo sua senha ou dados do cartão?",
+      "categoria": "Ligação Suspeita"
     },
     {
-      "nivel": "Médio",
-      "mensagem": "Essa situação pode ser suspeita. Tenha cuidado e confirme as informações com alguém de confiança antes de continuar."
+      "id": "2",
+      "texto": "Alguém pediu que você fizesse uma transferência ou Pix urgente para 'liberar' um benefício ou prêmio?",
+      "categoria": "Golpe Financeiro"
     },
     {
-      "nivel": "Alto",
-      "mensagem": "Essa situação parece perigosa. Não envie dinheiro nem compartilhe seus dados. Fale com alguém de confiança ou procure seu banco antes de tomar qualquer decisão."
+      "id": "3",
+      "texto": "Você recebeu uma mensagem dizendo que um familiar está em perigo e precisa de dinheiro imediatamente?",
+      "categoria": "Golpe Familiar"
+    },
+    {
+      "id": "4",
+      "texto": "Alguém pediu para você instalar um aplicativo no celular para 'ajudar' ou 'verificar' sua conta?",
+      "categoria": "Acesso Remoto"
+    },
+    {
+      "id": "5",
+      "texto": "Você foi informado que ganhou um prêmio ou sorteio, mas precisa pagar uma taxa para recebê-lo?",
+      "categoria": "Golpe de Prêmio"
+    },
+    {
+      "id": "6",
+      "texto": "Alguém pediu seus dados pessoais (CPF, RG, data de nascimento) por telefone ou mensagem sem você ter iniciado o contato?",
+      "categoria": "Roubo de Dados"
+    },
+    {
+      "id": "7",
+      "texto": "Você recebeu um link por WhatsApp ou SMS pedindo para atualizar seus dados bancários ou do INSS?",
+      "categoria": "Phishing"
+    },
+    {
+      "id": "8",
+      "texto": "Uma pessoa que você conheceu recentemente pela internet pediu dinheiro emprestado ou um favor financeiro?",
+      "categoria": "Golpe Romântico"
     }
-  ]
-}
-}
+  ],
+  "respostas": [],
+  "$schema": "./node_modules/json-server/schema.json"
+  }
