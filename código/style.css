@@ -16,13 +16,19 @@
   text-align: left;
   border: none;
 }
+.accordion {
+  margin-bottom: 10px; /*espaçamento entre blocos. prefiro não juntar*/
+}
+.accordion:focus {
+  outline: 3px solid #051e53;
+}
 
-/* Adicione uma cor de fundo ao botão se ele receber clique (adicione a classe .active com JS) e quando você passar o mouse sobre ele (hover) */
+/* Adicionei uma cor de fundo ao botão se ele receber clique (adicione a classe .active com JS) e quando você passar o mouse sobre ele fica clarinho */
 .active, .accordion:hover {
   background-color: #2c83b9;
 }
 
-/* Estiliza o painel do acordeão, xuxu. Nota: oculto por padrão */
+/* Estiliza o painel do acordeão ;p. Nota: oculto por padrão */
 .painel {
   padding: 18px;
   margin: 12px;
@@ -35,7 +41,9 @@
   display: none;
   overflow: hidden;
 }
-
+.painel {
+  margin-bottom: 20px; /*espaçamento entre blocos. prefiro não juntar*/
+}
 .accordion:after {
   content: '\002b'; /*  (+) */
   font-size: 30px;
@@ -62,7 +70,7 @@
   box-sizing: border-box;
   padding: 20px;
   display: flex;
-  font-size: 18px;
+  font-size: 24px;
   color: #10496d;
   margin-bottom: 30px;
 }
@@ -101,7 +109,8 @@ border-radius: 5px;
 
  .botão:hover
 {
-background-color: #1dbac5;
+background-color: #19a8b3;
+outline: 2px solid #051e53;
 
 }
 body {
@@ -110,6 +119,6 @@ body {
     width: 95%;
     margin: 0 auto;
     padding: 0;
-    
+    line-height: 1.7;
 }
 

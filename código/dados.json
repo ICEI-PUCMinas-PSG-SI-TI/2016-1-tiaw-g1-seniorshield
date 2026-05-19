@@ -1,66 +1,59 @@
-[
-  [
+{
+  "principais_tipos_de_golpe": [
     {
-      "principais_tipos_de_golpe": [
-        {
-          "id": "fraude-de-consumo",
-          "titulo": "fraude de consumo",
-          "descricao_detalhada": "O golpe da loja falsa é uma fraude onde criminosos criam sites ou perfis em redes sociais que imitam lojas legítimas, oferecendo produtos a preços muito baixos para atrair vítimas. Usam manipulação psicológica para criar urgência, fazendo com que o idoso compre sem conferir a segurança do site.",
-          "sinais_principais": [
-            "Preço muito abaixo do normal",
-            "Site sem CNPJ ou telefone",
-            "Sem avaliações de clientes reais"
-          ],
-          "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
-          "tutorial_slug": "https://i.pinimg.com/736x/6f/d3/10/6fd3108cc9a9fd95b8d05e24449f05bf.jpg"
-        },
-        {
-          "id": "afetivo",
-          "titulo": "Golpe do Parceiro Virtual",
-          "descricao_detalhada": "Nesta fraude, os golpistas criam perfis falsos e conquistam a confiança e o afeto da vítima através de conversas diárias. Após estabelecer um laço emocional, eles inventam situações de emergência ou viagens para pedir dinheiro, aproveitando-se da solidariedade e carência do idoso.",
-          "sinais_principais": [
-            "Qualidade de imagem muito perfeita",
-            "Nunca aceita fazer videochamadas",
-            "Pede dinheiro para urgências médicas"
-          ],
-          "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
-          "tutorial_slug": "https://i.pinimg.com/736x/59/2c/78/592c7814418410f8a6b3a0d2ee2b5ffa.jpg"
-        },
-        {
-          "id": "autoridade",
-          "titulo": "suposta autoridade",
-          "descricao_detalhada": "Os criminosos fingem ser funcionários de instituições de confiança. Eles alegam que a conta bancária foi invadida ou que o benefício será bloqueado, usando o medo para paralisar a vítima e convencê-la a transferir valores para uma suposta 'conta de segurança'.",
-          "sinais_principais": [
-            "Ligação de número desconhecido",
-            "Pedido de senhas ou biometria",
-            "Pressão para resolver na hora"
-          ],
-          "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
-          "tutorial_slug": "https://i.pinimg.com/736x/23/43/e1/2343e13c226f4d6e49245c3ac177d878.jpg"
-        },
-        {
-          "id": "identidade",
-          "titulo": "Roubo de dados",
-          "descricao_detalhada": "O foco é assumir o controle dos acessos da vítima. Criminosos enviam links falsos fingindo ser a 'Prova de Vida Digital' do governo. Ao clicar e fornecer dados ou fotos, o idoso acaba entregando o acesso de suas contas bancárias e do portal Gov.br aos golpistas.",
-          "sinais_principais": [
-            "Mensagem urgente sobre benefício",
-            "Link que pede fotos do rosto",
-            "Mensagem pedindo código enviado por SMS"
-          ],
-          "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
-          "tutorial_slug": "https://i.pinimg.com/736x/b9/51/e7/b951e72229773a441fc379a4c7d85292.jpg"
-        }
-      ]
+      "id": "fraude-de-consumo",
+      "titulo": "Fraude de Consumo",
+      "descricao_detalhada": "O golpe da loja falsa é uma fraude onde criminosos criam sites ou perfis em redes sociais que imitam lojas legítimas, oferecendo produtos a preços muito baixos para atrair vítimas. Usam manipulação psicológica para criar urgência, fazendo com que o idoso compre sem conferir a segurança do site.",
+      "sinais_principais": [
+        "Preço muito abaixo do normal",
+        "Site sem CNPJ ou telefone",
+        "Sem avaliações de clientes reais"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "https://i.pinimg.com/736x/6f/d3/10/6fd3108cc9a9fd95b8d05e24449f05bf.jpg"
+    },
+    {
+      "id": "afetivo",
+      "titulo": "Golpe do Parceiro Virtual",
+      "descricao_detalhada": "Nesta fraude, os golpistas criam perfis falsos e conquistam a confiança e o afeto da vítima através de conversas diárias. Após estabelecer um laço emocional, eles inventam situações de emergência ou viagens para pedir dinheiro, aproveitando-se da solidariedade e carência do idoso.",
+      "sinais_principais": [
+        "Qualidade de imagem muito perfeita",
+        "Nunca aceita fazer videochamadas",
+        "Pede dinheiro para urgências médicas"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "https://i.pinimg.com/736x/59/2c/78/592c7814418410f8a6b3a0d2ee2b5ffa.jpg"
+    },
+    {
+      "id": "autoridade",
+      "titulo": "Suposta Autoridade",
+      "descricao_detalhada": "Os criminosos fingem ser funcionários de instituições de confiança. Eles alegam que a conta bancária foi invadida ou que o benefício será bloqueado, usando o medo para paralisar a vítima e convencê-la a transferir valores para uma suposta 'conta de segurança'.",
+      "sinais_principais": [
+        "Ligação de número desconhecido",
+        "Pedido de senhas ou biometria",
+        "Pressão para resolver na hora"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "https://i.pinimg.com/736x/23/43/e1/2343e13c226f4d6e49245c3ac177d878.jpg"
+    },
+    {
+      "id": "identidade",
+      "titulo": "Roubo de Dados",
+      "descricao_detalhada": "O foco é assumir o controle dos acessos da vítima. Criminosos enviam links falsos fingindo ser a 'Prova de Vida Digital' do governo. Ao clicar e fornecer dados ou fotos, o idoso acaba entregando o acesso de suas contas bancárias e do portal Gov.br aos golpistas.",
+      "sinais_principais": [
+        "Mensagem urgente sobre benefício",
+        "Link que pede fotos do rosto",
+        "Mensagem pedindo código enviado por SMS"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "https://i.pinimg.com/736x/b9/51/e7/b951e72229773a441fc379a4c7d85292.jpg"
     }
   ],
-  [
+
+  "descricoes": [
     {
-      "descrições": [
-        {
-          "descrição_principal": "Todo golpe digital sobrevive de três pilares: Urgência (precisa ser agora), Medo (algo ruim vai acontecer) ou Ganância (uma vantagem muito grande). Se uma mensagem causar qualquer uma dessas sensações, pare, não clique em nada e fale com alguém de sua total confiança antes de prosseguir.",
-          "descrição_secundária": "Esses são os golpes mais comuns, mas existem muitos outros. Se algo parecer estranho, siga a regra dos 3 pilares e busque ajuda de alguém de confiança."
-        }
-      ]
+      "descricao_principal": "Todo golpe digital sobrevive de três pilares: urgência (precisa ser agora), medo (algo ruim vai acontecer) ou ganância (uma vantagem muito grande). Se uma mensagem causar qualquer uma dessas sensações, pare, não clique em nada e fale com alguém de sua total confiança antes de prosseguir.",
+      "descricao_secundaria": "Esses são os golpes mais comuns, mas existem muitos outros. Se algo parecer estranho, siga a regra dos 3 pilares e busque ajuda de alguém de confiança."
     }
   ]
-]
+}
