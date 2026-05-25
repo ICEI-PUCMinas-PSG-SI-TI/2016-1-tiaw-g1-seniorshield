@@ -188,7 +188,45 @@
   "id_pergunta": "8",
   "pergunta": "Você já conheceu alguém pela internet que começou a pedir dinheiro logo após se conhecerem, sem nunca ter se encontrado pessoalmente?"
 }
-]
+],
+  "boletins": [
+    {
+      "nome": "Nome",
+      "data": "0000-00-00",
+      "tipoGolpe": "WhatsApp clonado",
+      "valor": "R$ 0,00",
+      "descricao": ".",
+      "texto": "Eu, Nome, venho por meio deste registrar um boletim de ocorrência referente a um golpe sofrido no dia 00/00/0000.\n\nTipo do golpe: WhatsApp clonado\n\nValor do prejuízo: R$ 0,00\n\nDescrição dos fatos:\n.\n\nSolicito que as medidas cabíveis sejam tomadas pelas autoridades competentes.",
+      "id": "1"
+    },
+    {
+      "nome": "Nome",
+      "data": "0000-00-00",
+      "tipoGolpe": "Golpe do Pix",
+      "valor": "R$ 0,00",
+      "descricao": ".",
+      "texto": "Eu, Nome, venho por meio deste registrar um boletim de ocorrência referente a um golpe sofrido no dia 00/00/0000.\n\nTipo do golpe: Golpe do Pix\n\nValor do prejuízo: R$ 0,00\n\nDescrição dos fatos:\n.\n\nSolicito que as medidas cabíveis sejam tomadas pelas autoridades competentes.",
+      "id": "2"
+    },
+    {
+      "nome": "Nome",
+      "data": "0000-00-00",
+      "tipoGolpe": "Falso empréstimo",
+      "valor": "R$ 0,00",
+      "descricao": ".",
+      "texto": "Eu, Nome, venho por meio deste registrar um boletim de ocorrência referente a um golpe sofrido no dia 00/00/0000.\n\nTipo do golpe: Falso empréstimo\n\nValor do prejuízo: R$ 0,00\n\nDescrição dos fatos:\n.\n\nSolicito que as medidas cabíveis sejam tomadas pelas autoridades competentes.",
+      "id": "3"
+    },
+    {
+      "nome": "Nome",
+      "data": "0000-00-00",
+      "tipoGolpe": "Falso suporte técnico",
+      "valor": "R$ 0,00",
+      "descricao": ".",
+      "texto": "Eu, Nome, venho por meio deste registrar um boletim de ocorrência referente a um golpe sofrido no dia 00/00/0000.\n\nTipo do golpe: Falso suporte técnico\n\nValor do prejuízo: R$ 0,00\n\nDescrição dos fatos:\n.\n\nSolicito que as medidas cabíveis sejam tomadas pelas autoridades competentes.",
+      "id": "4"
+    }
+  ]
 }
 
 
