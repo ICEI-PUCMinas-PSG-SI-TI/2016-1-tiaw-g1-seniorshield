@@ -1,75 +1,64 @@
 {
-  "pagina1": {
-    "categorias": [
-      "fraudes de consumo",
-      "falsidade ideológica",
-      "falsa autoridade",
-      "tutoriais",
-      "saúde e bem estar"
+  "categorias": [
+    "fraudesDeConsumo",
+    "falsidadeIdeologica",
+    "falsaAutoridade",
+    "tutoriais",
+    "saudeEBemEstar"
+  ],
+
+  "videosPorCategoria": {
+    "fraudesDeConsumo": [
+      "URL vídeo 1",
+      "URL vídeo 2",
+      "URL vídeo 3",
+      "URL vídeo 4"
+    ],
+
+    "falsidadeIdeologica": [
+      "URL vídeo 1",
+      "URL vídeo 2",
+      "URL vídeo 3",
+      "URL vídeo 4"
+    ],
+
+    "falsaAutoridade": [
+      "URL vídeo 1",
+      "URL vídeo 2",
+      "URL vídeo 3",
+      "URL vídeo 4"
+    ],
+
+    "tutoriais": [
+      "URL vídeo 1",
+      "URL vídeo 2",
+      "URL vídeo 3",
+      "URL vídeo 4"
+    ],
+
+    "saudeEBemEstar": [
+      "URL vídeo 1",
+      "URL vídeo 2",
+      "URL vídeo 3",
+      "URL vídeo 4"
     ]
   },
-  "pagina2": [
-    {
-      "id": 1,
-      "tag": "fraudes de consumo",
-      "videos": [
-        "URL vídeo 1",
-        "URL vídeo 2",
-        "URL vídeo 3",
-        "URL vídeo 4"
-      ]
+
+  "videoSelecionado": {
+    "videoGrande": "URL do vídeo",
+    "titulo":"titulo do video",
+
+    "criador": {
+      "nome": "Nome do criador",
+      "canal": "Nome do canal"
     },
-    {
-      "id": 2,
-      "tag": "falsidade ideológica",
-      "videos": [
-        "URL vídeo 1",
-        "URL vídeo 2",
-        "URL vídeo 3",
-        "URL vídeo 4"
-      ]
-    },
-    {
-      "id": 3,
-      "tag": "falsa autoridade",
-      "videos": [
-        "URL vídeo 1",
-        "URL vídeo 2",
-        "URL vídeo 3",
-        "URL vídeo 4"
-      ]
-    },
-    {
-      "id": 4,
-      "tag": "tutoriais",
-      "videos": [
-        "URL vídeo 1",
-        "URL vídeo 2",
-        "URL vídeo 3",
-        "URL vídeo 4"
-      ]
-    },
-    {
-      "id": 5,
-      "tag": "saúde e bem estar",
-      "videos": [
-        "URL vídeo 1",
-        "URL vídeo 2",
-        "URL vídeo 3",
-        "URL vídeo 4"
-      ]
-    }
-  ],
-  "pagina3": {
-    "video_selecionado": {
-      "video_grande": "URL do vídeo",
-      "criador": "nome do criador",
-      "fontes_relevantes": [
-        "fonte 1 link",
-        "fonte 2 link"
-      ]
-    }
+
+    "fontesRelevantes": [
+      "fonte 1 link",
+      "fonte 2 link"
+    ]
   },
+  
   "niveis": [
     {
       "id": "baixo",
