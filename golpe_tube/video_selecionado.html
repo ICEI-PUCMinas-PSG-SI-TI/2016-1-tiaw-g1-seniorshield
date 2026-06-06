@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SeniorShield - Assistir Vídeo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="golpe-tube.css">
+
+</head>
+<body>
+
+    <header>
+        <h1 id="video-page-logo">Golpe Tube 🛡️</h1>
+        <nav>
+            <button id="btn-video-back">Voltar para o Golpe Tube</button>
+            <button id="btn-video-home">Ir para o Início</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="player-container">
+            
+    
+            
+            <p id="adendo">
+                adendo: o Golpe Tube é apenas uma coletânea de vídeos que os responsáveis pelo site fizeram uma curadoria. De forma alguma os conteúdos apresentados substituem ajuda profissionais
+            </p>
+            
+            <div id="video-player">
+                
+                </div>
+
+          <div id="caixinhas">
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        criador original
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown-criador-lista">
+                        <li><span class="dropdown-item-text" id="info-nome-canal">Carregando canal...</span></li>
+                        <li><a class="dropdown-item" id="info-link-canal" href="#" target="_blank">Visitar canal</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        fontes
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown-fontes-lista">
+                        <li><span class="dropdown-item-text">Carregando fontes...</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="player.js"></script>
+</body>
+</html>
+

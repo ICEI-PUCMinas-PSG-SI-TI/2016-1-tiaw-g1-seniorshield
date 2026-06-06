@@ -1,0 +1,54 @@
+{
+  "categorias": [
+    { "id": "fraudesDeConsumo", "nome": "fraude de consumo.  " },
+    { "id": "falsidadeIdeologica", "nome": "falsidade ideologica.  " },
+    { "id": "falsaAutoridade", "nome": "autoridade falsa.  " },
+    { "id": "tutoriais", "nome": "tutoriais.  " },
+    { "id": "saudeEBemEstar", "nome": "Saúde e bem estar.  " }
+  ],
+  "videosPorCategoria": {
+    "fraudesDeConsumo": [
+      { "id": 1, "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "O Golpe da Loja Virtual Falsa" },
+      { "id": 2, "url": "https://www.youtube.com/embed/9bZkp7q19f0", "titulo": "Como Identificar um Site Seguro" },
+      { "id": 3, "url": "https://www.youtube.com/embed/LXb3EKWsInQ", "titulo": "Cuidado com Promoções Absurdas" },
+      { "id": 4, "url": "https://www.youtube.com/embed/3JZ_D3ELwOQ", "titulo": "Ciladas no Black Friday" }
+    ],
+    "falsidadeIdeologica": [
+      { "id": 5, "url": "https://www.youtube.com/embed/V-_O7nl0Ii0", "titulo": "Perfil Clonado no WhatsApp" },
+      { "id": 6, "url": "https://www.youtube.com/embed/kJQP7kiw5Fk", "titulo": "Falso Parente Pedindo Dinheiro" },
+      { "id": 7, "url": "https://www.youtube.com/embed/l482T0yNkeo", "titulo": "Golpe do Aniversário" },
+      { "id": 8, "url": "https://www.youtube.com/embed/Ke90Tje7VS0", "titulo": "Como Proteger Seu Aplicativo" }
+    ],
+    "falsaAutoridade": [
+      { "id": 9, "url": "https://www.youtube.com/embed/7thgA8-U654", "titulo": "O Golpe do Falso Funcionário do Banco" },
+      { "id": 10, "url": "https://www.youtube.com/embed/z976ynwIdmE", "titulo": "Falsa Ligação da Central de Segurança" },
+      { "id": 11, "url": "https://www.youtube.com/embed/gfU_m9Kvj3A", "titulo": "Ameaças de Bloqueio de Conta" },
+      { "id": 12, "url": "https://www.youtube.com/embed/09R8_2nJtjg", "titulo": "Como Validar Contatos Oficiais" }
+    ],
+    "tutoriais": [
+      { "id": 13, "url": "https://www.youtube.com/embed/tgbNymZ7vqY", "titulo": "Configurando a Autenticação em Duas Etapas" },
+      { "id": 14, "url": "https://www.youtube.com/embed/C0DPdy98e4c", "titulo": "Como Usar o Cartão Virtual no Celular" },
+      { "id": 15, "url": "https://www.youtube.com/embed/YykjpeuMNEk", "titulo": "Entendendo Extratos e Transações Suspeitas" },
+      { "id": 16, "url": "https://www.youtube.com/embed/exJm9C_7640", "titulo": "O Que Fazer Se For Clonado" }
+    ],
+    "saudeEBemEstar": [
+      { "id": 17, "url": "https://www.youtube.com/embed/6stlCkMVGDU", "titulo": "Cuidado com Remédios Milagrosos Oline" },
+      { "id": 18, "url": "https://www.youtube.com/embed/W6NZfCO5SIk", "titulo": "Falsos Planos de Saúde" },
+      { "id": 19, "url": "https://www.youtube.com/embed/lTRiuFIWV54", "titulo": "Como Checar Informações Médicas" },
+      { "id": 20, "url": "https://www.youtube.com/embed/tPEE9ZwTmy0", "titulo": "Evitando Golpes de Consultas Falsas" }
+    ]
+  },
+  "videoSelecionado": {
+    "id": "atual",
+    "videoGrande": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "titulo": "Como evitar golpes na internet de forma simples",
+    "criador": {
+      "nome": "Canal Web Seguro",
+      "canal": "https://www.youtube.com/c/WebSeguroExemplo"
+    },
+    "fontesRelevantes": [
+      { "id": 1, "link": "https://www.gov.br/governodigital" },
+      { "id": 2, "link": "https://www.procon.org.br" }
+    ]
+  }
+}

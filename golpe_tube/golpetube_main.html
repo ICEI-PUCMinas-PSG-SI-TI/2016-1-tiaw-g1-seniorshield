@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SeniorShield - Seleção</title>
+    <link rel="stylesheet" href="golpe-tube.css">
+</head>
+<body>
+
+    <header>
+        <h1>SeniorShield 🛡️</h1>
+    </header>
+
+    <main>
+        <section>
+            <div id="introducao">
+                <p id="chamada">Quer se manter por dentro das notícias sobre golpes virtuais ou prefere uma abordagem mais visual?</p>
+                <p id="explicaçao">É por isso que criamos o "Golpe Tube", que contém vídeos do YouTube que irão te auxiliar nessa jornada de aprendizado</p>
+            </div>
+             
+            <div id="container">
+                <div id="instrucoes">
+                    <p>Selecione o(s) tipo(s) de golpe que você quer se informar sobre, em seguida, aperte em "confirmar". Você será direcionado a uma página com o conteúdo desejado</p>
+                </div>
+                
+                <div class="tags">
+                    <form id="form-categorias">
+                        <div>
+                            <input type="checkbox" id="chk-fraudes-consumo" value="fraudesDeConsumo">
+                            <label for="chk-fraudes-consumo">fraude de consumo</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-falsidade-ideologica" value="falsidadeIdeologica">
+                            <label for="chk-falsidade-ideologica">falsidade ideológica</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-falsa-autoridade" value="falsaAutoridade">
+                            <label for="chk-falsa-autoridade">falsa autoridade</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-tutoriais" value="tutoriais">
+                            <label for="chk-tutoriais">tutoriais</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-saude-bem-estar" value="saudeEBemEstar">
+                            <label for="chk-saude-bem-estar">Saúde</label>
+                        </div>
+
+                        <button type="button" id="btn-confirmar-selecao">Confirmar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
