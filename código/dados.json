@@ -3,11 +3,11 @@
     {
       "id": "fraude-de-consumo",
       "titulo": "Fraude de Consumo",
-      "descricao_detalhada": "O golpe da loja falsa é uma fraude onde criminosos criam sites ou perfis em redes sociais que imitam lojas legítimas, oferecendo produtos a preços muito baixos para atrair vítimas. Usam manipulação psicológica para criar urgência, fazendo com que o idoso compre sem conferir a segurança do site.",
+      "descricao_detalhada": "Nesse tipo de golpe, criminosos se passam por empresas ou vendedores para convencer a vítima a realizar compras, pagamentos ou contratações que não serão cumpridas. Geralmente utilizam promoções muito atrativas, informações enganosas ou canais falsos para transmitir confiança e obter dinheiro ou dados pessoais.",
       "sinais_principais": [
-        "Preço muito abaixo do normal",
-        "Site sem CNPJ ou telefone",
-        "Sem avaliações de clientes reais"
+        "Ofertas boas demais para serem verdade",
+        "Poucas informações sobre a empresa",
+        "Pressão para realizar o pagamento rapidamente"
       ],
       "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
       "tutorial_slug": "https://i.pinimg.com/736x/6f/d3/10/6fd3108cc9a9fd95b8d05e24449f05bf.jpg"
@@ -15,11 +15,11 @@
     {
       "id": "afetivo",
       "titulo": "Golpe do Parceiro Virtual",
-      "descricao_detalhada": "Nesta fraude, os golpistas criam perfis falsos e conquistam a confiança e o afeto da vítima através de conversas diárias. Após estabelecer um laço emocional, eles inventam situações de emergência ou viagens para pedir dinheiro, aproveitando-se da solidariedade e carência do idoso.",
+      "descricao_detalhada": "Os golpistas criam uma relação de confiança com a vítima por meio de conversas frequentes, amizade ou envolvimento emocional. Depois de conquistar essa confiança, passam a solicitar dinheiro, dados pessoais ou favores, explorando os sentimentos da vítima para obter vantagens.",
       "sinais_principais": [
-        "Qualidade de imagem muito perfeita",
-        "Nunca aceita fazer videochamadas",
-        "Pede dinheiro para urgências médicas"
+        "Demonstra confiança ou intimidade muito rapidamente",
+        "Evita comprovar a própria identidade",
+        "Faz pedidos de dinheiro, presentes ou ajuda financeira"
       ],
       "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
       "tutorial_slug": "https://i.pinimg.com/736x/59/2c/78/592c7814418410f8a6b3a0d2ee2b5ffa.jpg"
@@ -27,14 +27,36 @@
     {
       "id": "autoridade",
       "titulo": "Suposta Autoridade",
-      "descricao_detalhada": "Os criminosos fingem ser funcionários de instituições de confiança. Eles alegam que a conta bancária foi invadida ou que o benefício será bloqueado, usando o medo para paralisar a vítima e convencê-la a transferir valores para uma suposta 'conta de segurança'.",
+      "descricao_detalhada": "Nessa fraude, criminosos fingem representar instituições, empresas ou profissionais de confiança. Utilizam a aparência de autoridade para convencer a vítima a fornecer informações, realizar pagamentos ou tomar decisões sem verificar a autenticidade do contato.",
       "sinais_principais": [
-        "Ligação de número desconhecido",
-        "Pedido de senhas ou biometria",
-        "Pressão para resolver na hora"
+        "Contato inesperado alegando representar uma instituição",
+        "Solicitação de informações pessoais ou financeiras",
+        "Tentativa de gerar medo, urgência ou preocupação"
       ],
       "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
       "tutorial_slug": "https://i.pinimg.com/736x/23/43/e1/2343e13c226f4d6e49245c3ac177d878.jpg"
+    },
+    {
+      "id": "identidade",
+      "titulo": "Roubo de Dados",
+      "descricao_detalhada": "O objetivo desse golpe é obter informações pessoais, senhas, códigos de acesso ou outros dados que permitam aos criminosos assumir contas, realizar transações ou cometer fraudes em nome da vítima. Os contatos podem ocorrer por mensagens, ligações, e-mails ou páginas falsas.",
+      "sinais_principais": [
+        "Pedidos incomuns de informações pessoais",
+        "Links ou arquivos enviados por desconhecidos",
+        "Solicitação de senhas, códigos ou confirmações de acesso"
+      ],
+      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
+      "tutorial_slug": "https://i.pinimg.com/736x/b9/51/e7/b951e72229773a441fc379a4c7d85292.jpg"
+    }
+  ],
+
+  "descricoes": [
+    {
+      "descricao_principal": "A maioria dos golpes utiliza estratégias para influenciar decisões rápidas. Os criminosos costumam explorar emoções como urgência, medo, confiança excessiva ou a promessa de alguma vantagem. Sempre que uma situação parecer incomum, interrompa a conversa e procure confirmar as informações por canais oficiais.",
+      "descricao_secundaria": "Esses são alguns dos tipos mais comuns de golpes, mas novas formas de fraude surgem constantemente. Em caso de dúvida, evite compartilhar informações pessoais, realizar pagamentos imediatos ou clicar em links recebidos sem verificação."
+    }
+  ]
+}      "tutorial_slug": "https://i.pinimg.com/736x/23/43/e1/2343e13c226f4d6e49245c3ac177d878.jpg"
     },
     {
       "id": "identidade",
