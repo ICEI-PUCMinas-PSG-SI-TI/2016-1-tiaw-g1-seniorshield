@@ -55,27 +55,5 @@
       "descricao_principal": "A maioria dos golpes utiliza estratégias para influenciar decisões rápidas. Os criminosos costumam explorar emoções como urgência, medo, confiança excessiva ou a promessa de alguma vantagem. Sempre que uma situação parecer incomum, interrompa a conversa e procure confirmar as informações por canais oficiais.",
       "descricao_secundaria": "Esses são alguns dos tipos mais comuns de golpes, mas novas formas de fraude surgem constantemente. Em caso de dúvida, evite compartilhar informações pessoais, realizar pagamentos imediatos ou clicar em links recebidos sem verificação."
     }
-  ]
-}      "tutorial_slug": "https://i.pinimg.com/736x/23/43/e1/2343e13c226f4d6e49245c3ac177d878.jpg"
-    },
-    {
-      "id": "identidade",
-      "titulo": "Roubo de Dados",
-      "descricao_detalhada": "O foco é assumir o controle dos acessos da vítima. Criminosos enviam links falsos fingindo ser a 'Prova de Vida Digital' do governo. Ao clicar e fornecer dados ou fotos, o idoso acaba entregando o acesso de suas contas bancárias e do portal Gov.br aos golpistas.",
-      "sinais_principais": [
-        "Mensagem urgente sobre benefício",
-        "Link que pede fotos do rosto",
-        "Mensagem pedindo código enviado por SMS"
-      ],
-      "texto_chamada_tutorial": "Desconfiado? Você pode verificar aqui um tutorial sobre o que fazer",
-      "tutorial_slug": "https://i.pinimg.com/736x/b9/51/e7/b951e72229773a441fc379a4c7d85292.jpg"
-    }
-  ],
-
-  "descricoes": [
-    {
-      "descricao_principal": "Todo golpe digital sobrevive de três pilares: urgência (precisa ser agora), medo (algo ruim vai acontecer) ou ganância (uma vantagem muito grande). Se uma mensagem causar qualquer uma dessas sensações, pare, não clique em nada e fale com alguém de sua total confiança antes de prosseguir.",
-      "descricao_secundaria": "Esses são os golpes mais comuns, mas existem muitos outros. Se algo parecer estranho, siga a regra dos 3 pilares e busque ajuda de alguém de confiança."
-    }
-  ]
-}
+  ]  
+}     
