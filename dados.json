@@ -1,5 +1,10 @@
 {
+<<<<<<< HEAD
   "perguntas": [
+=======
+  "projeto": "Senior Shield",
+  "botoes_de_acoes_rapidas": [
+>>>>>>> f1d29b88b227e62b643be14f1845b96d0d89337c
     {
       "id": "1",
       "categoria": "Ligação Suspeita",
@@ -49,6 +54,7 @@
       "texto": "Uma pessoa que você conheceu recentemente pela internet pediu dinheiro emprestado ou um favor financeiro?"
     }
   ],
+<<<<<<< HEAD
   "recomendacoes": {
     "1": {
       "tipo": "perigo",
@@ -117,3 +123,16 @@
     }
   ]
 }
+=======
+  "area_cadastro_usuario": {
+    "titulo": "Cadastrar Novo Relato de Golpe",
+    "campos": [
+      { "id": "user_nome", "label": "Seu Nome", "tipo": "text" },
+      { "id": "user_titulo_golpe", "label": "Título do ocorrido", "tipo": "text" },
+      { "id": "user_sinais", "label": "Quais sinais você notou?", "tipo": "text" },
+      { "id": "user_descricao", "label": "Descrição detalhada", "tipo": "textarea" }
+    ],
+    "botao": "Enviar para o Netinho"
+  }
+}
+>>>>>>> f1d29b88b227e62b643be14f1845b96d0d89337c

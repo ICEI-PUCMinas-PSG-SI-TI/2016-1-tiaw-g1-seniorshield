@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>principais golpes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,5 +114,78 @@ ver tutorial
 </h3>
 
 <script src="java.js"></script>
+=======
+    <title>Senior Shield - Registrar Golpe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <header class="navbar-senior">
+        <div class="logo-container">
+            <img src="../docs/images/senior_Shield_logo.png" alt="Senior Shield Logo" class="logo-shield">
+            <span class="brand-name">Senior Shield</span>
+        </div>
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="container-cadastro">
+        
+        <section class="coluna-ilustracao">
+            <img src="../docs/images/netinho_Joia.png" alt="Netinho dando joinha" class="imagem-netinho">
+            <p class="texto-chamada">
+                Ajude a conscientizar a comunidade informando o golpe que você sofreu.
+            </p>
+        </section>
+
+        <section class="coluna-formulario">
+            <h2 class="titulo-formulario">Cadastrar Golpe</h2>
+            
+            <form id="form-registrar-golpe">
+                
+                <div class="campo-grupo">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="golpe-sofrido">Golpe Sofrido</label>
+                    <select id="golpe-sofrido" name="golpe-sofrido" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="fraude-de-consumo">fraude de consumo</option>
+                        <option value="afetivo">afetivo</option>
+                        <option value="autoridade">autoridade</option>
+                        <option value="identidade">identidade</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="valor-perdido">Valor Perdido</label>
+                    <input type="text" id="valor-perdido" name="valor-perdido" placeholder="R$ 0,00" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="data-ocorrencia">Data da Ocorrência</label>
+                    <input type="date" id="data-ocorrencia" name="data-ocorrencia" required>
+                </div>
+
+                <button type="submit" class="botao-registrar">Registrar Golpe</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="java.js"></script>
+>>>>>>> f1d29b88b227e62b643be14f1845b96d0d89337c
 </body>
 </html>
