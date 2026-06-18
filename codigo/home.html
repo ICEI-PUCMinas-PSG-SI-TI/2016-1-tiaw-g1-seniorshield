@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeniorShield</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="home.html" class="navbar-logo">
+      <img src="img/logo.png" alt="Logo SeniorShield">
+      <span>Senior<strong>Shield</strong></span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="home.html" class="ativo">Início</a></li>
+      <li><a href="#golpes">Golpes</a></li>
+      <li><a href="#ferramentas">Ferramentas</a></li>
+      <li><a href="golpe_tube/golpetube_main.html">Golpe Tube</a></li>
+      <li><a href="dicionario-netinho/netinho.html">Netinho</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <span class="hero-badge">Proteção digital para idosos</span>
+      <h1>Você não está sozinho nessa! ❤️</h1>
+      <p>O SeniorShield te ajuda a reconhecer golpes, aprender a se proteger e saber o que fazer se algo acontecer. Com calma, juntos.</p>
+      <div class="hero-btns">
+        <a href="checklist/index.html" class="btn-branco">Fazer meu checklist</a>
+        <a href="#golpes" class="btn-ghost">Ver os golpes</a>
+      </div>
+    </div>
+    <div class="hero-mascote">
+      <img src="img/netinho.png" alt="Netinho" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    </div>
+  </section>
+  <div class="wave"></div>
+
+  <main>
+
+    <section id="golpes">
+      <p class="sec-label">Fique de olho</p>
+      <h2 class="sec-titulo">Principais tipos de golpe</h2>
+      <p id="descricao-geral" class="sec-descricao"></p>
+      <div id="acordeoes-container"></div>
+    </section>
+
+    <section id="ferramentas">
+      <p class="sec-label">O que você pode fazer aqui</p>
+      <h2 class="sec-titulo">Ferramentas do SeniorShield</h2>
+      <div class="tools-grid">
+        <a class="tool-card" href="checklist/index.html">
+          <h3>Checklist de Risco</h3>
+          <p>Responda 8 perguntas e descubra se você está em risco.</p>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a class="tool-card" href="cadastrar-golpe/index.html">
+          <span class="tool-emoji">📝</span>
+          <h3>Registrar Golpe</h3>
+          <p>Sofreu um golpe? Registre e ajude a alertar outras pessoas.</p>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a class="tool-card" href="boletim/index.html">
+          <h3>Gerar Boletim</h3>
+          <p>Texto pronto para registrar na delegacia virtual.</p>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a class="tool-card" href="dicionario-netinho/dicionario.html">
+          <h3>Dicionário</h3>
+          <p>Entenda termos como phishing, malware e spoofing.</p>
+          <span class="tool-arrow">→</span>
+        </a>
+        <a class="tool-card" href="golpe_tube/golpetube_main.html">
+          <h3>Golpe Tube</h3>
+          <p>Vídeos explicando como os golpes funcionam na prática.</p>
+          <span class="tool-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <p id="fim_pagina" class="fim-pagina"></p>
+
+  </main>
+
+  <footer>
+  
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>

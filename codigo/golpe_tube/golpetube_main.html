@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SeniorShield - Seleção</title>
+    <link rel="stylesheet" href="golpe-tube.css">
+</head>
+
+<body>
+    <header>
+        <h1>Golpe Tube <span class="shield">🛡️</span></h1>
+    </header>
+
+    <main>
+        <section>
+            <div id="introducao">
+                <p id="chamada">Quer se manter por dentro das notícias sobre golpes virtuais ou prefere uma abordagem
+                    mais visual?</p>
+                <p id="explicaçao">O Golpe Tube reúne vídeos educativos, reportagens e conteúdos informativos sobre os golpes digitais mais comuns, ajudando você a reconhecer sinais de fraude e navegar pela internet com mais segurança.</p>
+            </div>
+
+            <div id="container">
+                <div id="instrucoes">
+                    <p>Selecione uma ou mais categorias de golpes digitais e clique em "Confirmar". Em seguida, serão exibidos vídeos relacionados aos temas escolhidos.</p>
+                </div>
+
+                <div class="tags">
+                    <form id="form-categorias">
+                        <div>
+                            <input type="checkbox" id="chk-fraudes-consumo" value="fraudesDeConsumo">
+                            <label for="chk-fraudes-consumo">fraude de consumo</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-golpe-do-amor" value="golpeDoAmor">
+                            <label for="chk-golpe-do-amor">golpe do amor/parceiro virtual</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-falsa-autoridade" value="falsaAutoridade">
+                            <label for="chk-falsa-autoridade">falsa autoridade</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-tutoriais" value="tutoriais">
+                            <label for="chk-tutoriais">tutoriais e mais informações</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="chk-roubo-de-dados" value="RouboDeDados">
+                            <label for="chk-roubo-de-dados">Roubo de dados</label>
+                        </div>
+
+                        <button type="button" id="btn-confirmar-selecao">Confirmar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
