@@ -34,7 +34,6 @@ for (let i = 0; i < acc.length; i++) {
 
 fetch('http://localhost:3000/principais_tipos_de_golpe')
   .then(response => response.json())
-
   .then(golpes => {
 
     for (let i = 0; i < golpes.length; i++) {
@@ -63,9 +62,63 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
 
       let link = document.getElementById(`link-${i+1}`);
 
-      link.href = golpes[i].tutorial_slug;
+      // MODIFICAÇÃO: Removemos a URL estática do Pinterest e preparamos o clique dinâmico
+      link.href = "#"; 
 
-      // EVENTO NO LINK
+      link.addEventListener("click", function(evento) {
+        evento.preventDefault(); 
+
+        // Faz o fetch direto na chave de vídeos por categoria do seu servidor
+        fetch('http://localhost:3000/videosPorCategoria')
+          .then(res => res.json())
+          .then(categoriasDeVideo => {
+            
+            // Pega especificamente a lista "tutoriais" que você enviou
+            var listaTutoriais = categoriasDeVideo["tutoriais"];
+
+            if (listaTutoriais) {
+              var videoSelecionado = null;
+
+              // Identifica qual golpe foi clicado usando a variável 'i' do seu loop principal
+              // e atribui exatamente o objeto do vídeo correto da lista de tutoriais
+              if (i === 0) {
+                // Primeiro Golpe: Fraude de Consumo -> Vídeo ID 14 (identifique lojas falsas)
+                videoSelecionado = listaTutoriais.find(v => v.id === 14);
+              } 
+              else if (i === 1) {
+                // Segundo Golpe: Parceiro Virtual -> Vídeo ID 17 (GOLPE DO AMOR)
+                videoSelecionado = listaTutoriais.find(v => v.id === 17);
+              } 
+              else if (i === 2) {
+                // Terceiro Golpe: Suposta Autoridade -> Vídeo ID 15 (o golpe da falsa autoridade)
+                videoSelecionado = listaTutoriais.find(v => v.id === 15);
+              } 
+              else if (i === 3) {
+                // Quarto Golpe: Roubo de Dados -> Vídeo ID 13 (ROUBO DE DADOS na internet)
+                videoSelecionado = listaTutoriais.find(v => v.id === 13);
+              }
+
+              // Se o vídeo foi encontrado na lista, salva as propriedades dele no localStorage
+              if (videoSelecionado) {
+                
+                // Aqui salvamos exatamente as variáveis que a sua segunda parte do código lê
+                localStorage.setItem("videoUrlSelecionado", videoSelecionado.url);
+                localStorage.setItem("videoTituloSelecionado", videoSelecionado.titulo);
+                localStorage.setItem("videoCriadorSelecionado", JSON.stringify(videoSelecionado.criador));
+                localStorage.setItem("videoLinksSelecionados", JSON.stringify(videoSelecionado.linksUsados));
+
+                // Redireciona o usuário para a página do player onde o seu segundo script vai rodar
+                window.location.href = "player_video.html"; 
+
+              } else {
+                alert("O vídeo configurado para este golpe não foi encontrado.");
+              }
+            }
+          })
+          .catch(err => console.error('Erro ao buscar a categoria de tutoriais:', err));
+      });
+
+      // EVENTO NO LINK (MOUSEOVER/OUT)
       link.addEventListener("mouseover", function() {
         link.style.transform = "scale(1.1)";
       });
@@ -74,28 +127,24 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
         link.style.transform = "scale(1)";
       });
 
-    }
+    } // <--- FECHAMENTO DO LOOP FOR DE GOLPES (Corrigido)
 
-  })
-
+  }) // <--- FECHAMENTO DO THEN DE GOLPES (Corrigido)
   .catch(error => console.error('Erro ao carregar golpes:', error));
 
 
 
 // FETCH DAS DESCRIÇÕES
 
-
 fetch('http://localhost:3000/descricoes')
   .then(response => response.json())
-
   .then(descricao => {
 
-    document.getElementById("descricao-geral").innerHTML =
+    document.getElementById("descricao-general").innerHTML =
     descricao[0].descricao_principal;
 
     document.getElementById("fim_pagina").innerHTML =
     descricao[0].descricao_secundaria;
 
   })
-
   .catch(error => console.error('Erro ao carregar descrições:', error));
