@@ -62,7 +62,7 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
 
       let link = document.getElementById(`link-${i+1}`);
 
-      // MODIFICAÇÃO: Removemos a URL estática do Pinterest e preparamos o clique dinâmico
+      
       link.href = "#"; 
 
       link.addEventListener("click", function(evento) {
@@ -73,14 +73,13 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
           .then(res => res.json())
           .then(categoriasDeVideo => {
             
-            // Pega especificamente a lista "tutoriais" que você enviou
+           
             var listaTutoriais = categoriasDeVideo["tutoriais"];
 
             if (listaTutoriais) {
               var videoSelecionado = null;
 
-              // Identifica qual golpe foi clicado usando a variável 'i' do seu loop principal
-              // e atribui exatamente o objeto do vídeo correto da lista de tutoriais
+             
               if (i === 0) {
                 // Primeiro Golpe: Fraude de Consumo -> Vídeo ID 14 (identifique lojas falsas)
                 videoSelecionado = listaTutoriais.find(v => v.id === 14);
@@ -101,14 +100,13 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
               // Se o vídeo foi encontrado na lista, salva as propriedades dele no localStorage
               if (videoSelecionado) {
                 
-                // Aqui salvamos exatamente as variáveis que a sua segunda parte do código lê
+               
                 localStorage.setItem("videoUrlSelecionado", videoSelecionado.url);
                 localStorage.setItem("videoTituloSelecionado", videoSelecionado.titulo);
                 localStorage.setItem("videoCriadorSelecionado", JSON.stringify(videoSelecionado.criador));
                 localStorage.setItem("videoLinksSelecionados", JSON.stringify(videoSelecionado.linksUsados));
 
-                // Redireciona o usuário para a página do player onde o seu segundo script vai rodar
-                window.location.href = "player_video.html"; 
+                window.open("video_selecionado.html", "_blank");
 
               } else {
                 alert("O vídeo configurado para este golpe não foi encontrado.");
@@ -127,9 +125,9 @@ fetch('http://localhost:3000/principais_tipos_de_golpe')
         link.style.transform = "scale(1)";
       });
 
-    } // <--- FECHAMENTO DO LOOP FOR DE GOLPES (Corrigido)
+    } // <--- FECHAMENTO DO LOOP FOR DE GOLPES
 
-  }) // <--- FECHAMENTO DO THEN DE GOLPES (Corrigido)
+  }) // <--- FECHAMENTO DO THEN DE GOLPES 
   .catch(error => console.error('Erro ao carregar golpes:', error));
 
 
@@ -140,7 +138,7 @@ fetch('http://localhost:3000/descricoes')
   .then(response => response.json())
   .then(descricao => {
 
-    document.getElementById("descricao-general").innerHTML =
+    document.getElementById("descricao-geral").innerHTML =
     descricao[0].descricao_principal;
 
     document.getElementById("fim_pagina").innerHTML =

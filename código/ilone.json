@@ -1,6 +1,6 @@
-[
+
   {
-    "principais_tipos_de_golpe": [
+  "principais_tipos_de_golpe": [
       {
         "id": "fraude-de-consumo",
         "titulo": "Fraude de Consumo",
@@ -56,9 +56,9 @@
         "descricao_principal": "A maioria dos golpes utiliza estratégias para influenciar decisões rápidas. Os criminosos costumam explorar emoções como urgência, medo, confiança excessiva ou a promessa de alguma vantagem. Sempre que uma situação parecer incomum, interrompa a conversa e procure confirmar as informações por canais oficiais.",
         "descricao_secundaria": "Esses são alguns dos tipos mais comuns de golpes, mas novas formas de fraude surgem constantemente. Em caso de dúvida, evite compartilhar informações pessoais, realizar pagamentos imediatos ou clicar em links recebidos sem verificação."
       }
-    ]
-  },
-  {
+    ],
+  
+  
     "categorias": [
       {
         "id": "fraudesDeConsumo",
@@ -387,4 +387,3 @@
       "videoGrande": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
   }
-]
