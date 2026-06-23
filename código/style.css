@@ -85,6 +85,7 @@
 
 }
 #tipos{
+  cursor: pointer !important;
   display: flex;
   color: #10496d;
   text-align: center;
