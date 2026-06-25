@@ -1,0 +1,124 @@
+
+@import url('https://googleapis.com');
+
+
+/* Estiliza os botões usados ​​para abrir e fechar o painel recolhível */
+.accordion {
+  background-color: #1e72a7;
+  border-radius: 3px;
+  color: #fff;
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+  padding-bottom: 8px;
+  padding-top: 28px;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+.accordion {
+  margin-bottom: 10px; /*espaçamento entre blocos. prefiro não juntar*/
+}
+.accordion:focus {
+  outline: 3px solid #051e53;
+}
+
+/* Adicionei uma cor de fundo ao botão se ele receber clique (adicione a classe .active com JS) e quando você passar o mouse sobre ele fica clarinho */
+.active, .accordion:hover {
+  background-color: #2c83b9;
+}
+
+/* Estiliza o painel do acordeão ;p. Nota: oculto por padrão */
+.painel {
+  padding: 18px;
+  margin: 12px;
+  font-size: large;
+  background-color: #e4eeff;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #bcd7e9;
+  border-style: solid;
+  display: none;
+  overflow: hidden;
+}
+.painel {
+  margin-bottom: 20px; /*espaçamento entre blocos. prefiro não juntar*/
+}
+.accordion:after {
+  content: '\002b'; /*  (+) */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* (-) */
+}
+
+#titulo {
+  text-align: center;
+  box-sizing: border-box;
+  display: flexbox;
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e72a7;
+}
+#descricao-geral {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  font-size: 24px;
+  color: #10496d;
+  margin-bottom: 30px;
+}
+#fim_pagina{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  font-size: 18px;
+  color: #10496d;
+  margin-bottom: 30px;
+
+}
+#tipos{
+  display: flex;
+  color: #10496d;
+  text-align: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*botão*/
+.botão{
+display: block;
+text-align: center;
+border-radius: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+ .botão:hover
+{
+background-color: #19a8b3;
+outline: 2px solid #051e53;
+
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.7;
+}
+
