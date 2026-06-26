@@ -9,22 +9,10 @@
 </head>
 <body>
 
-    <header class="navbar-senior">
-        <div class="logo-container">
-            <img src="../docs/images/senior_Shield_logo.png" alt="Senior Shield Logo" class="logo-shield">
-            <span class="brand-name">Senior Shield</span>
-        </div>
-        <div class="menu-hamburguer">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
     <main class="container-cadastro">
         
         <section class="coluna-ilustracao">
-            <img src="../docs/images/netinho_Joia.png" alt="Netinho dando joinha" class="imagem-netinho">
+            <img src="" alt="Netinho dando joinha" class="imagem-netinho">
             <p class="texto-chamada">
                 Ajude a conscientizar a comunidade informando o golpe que você sofreu.
             </p>
@@ -41,18 +29,18 @@
                 </div>
 
                 <div class="campo-grupo">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Detalhes do Ocorrido</label>
+                    <textarea id="email" name="email" rows="4" placeholder="Conte resumidamente o que aconteceu..." required></textarea>
                 </div>
 
                 <div class="campo-grupo">
                     <label for="golpe-sofrido">Golpe Sofrido</label>
                     <select id="golpe-sofrido" name="golpe-sofrido" required>
                         <option value="" disabled selected hidden></option>
-                        <option value="fraude-de-consumo">fraude de consumo</option>
-                        <option value="afetivo">afetivo</option>
-                        <option value="autoridade">autoridade</option>
-                        <option value="identidade">identidade</option>
+                        <option value="Fraude de Consumo">fraude de consumo</option>
+                        <option value="Parceiro Virtual">afetivo</option>
+                        <option value="Suposta Autoridade">autoridade</option>
+                        <option value="Roubo de Dados">identidade</option>
                     </select>
                 </div>
 
@@ -70,9 +58,23 @@
 
             </form>
         </section>
-
     </main>
 
-    <script src="java.js"></script>
+    <section id="estatisticas-relatos" class="container-cadastro" style="display: block; margin-top: 50px; padding: 0 40px;">
+        <h2 style="color: #0f3f72; font-size: 32px; margin-bottom: 10px;">Golpes Denunciados pela Comunidade</h2>
+        <p style="font-size: 20px; margin-bottom: 30px;">Veja abaixo quais são as fraudes mais comuns registradas no site.</p>
+
+        <div class="grafico-container" style="background: #fff; padding: 30px; border-radius: 12px; border: 2px solid #e1e8ed; margin-bottom: 4px;">
+            <h3 style="color: #0f3f72; margin-bottom: 20px;">Total de Registros por Tipo</h3>
+            <div id="grafico-barras"></div>
+        </div>
+
+        <div class="comentarios-container" style="background: #fff; padding: 30px; border-radius: 12px; border: 2px solid #e1e8ed; margin-top: 30px;">
+            <h3 style="color: #0f3f72; margin-bottom: 20px;">Relatos Recentes</h3>
+            <div id="lista-comentarios"></div>
+        </div>
+    </section>
+
+    <script src="registro.js"></script>
 </body>
 </html>

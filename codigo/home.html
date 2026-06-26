@@ -11,44 +11,102 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="home.html" class="navbar-logo">
-      <img src="img/logo.png" alt="Logo SeniorShield">
-      <span>Senior<strong>Shield</strong></span>
-    </a>
-    <ul class="navbar-links">
-      <li><a href="home.html" class="ativo">Início</a></li>
-      <li><a href="#golpes">Golpes</a></li>
-      <li><a href="#ferramentas">Ferramentas</a></li>
-      <li><a href="golpe_tube/golpetube_main.html">Golpe Tube</a></li>
-      <li><a href="dicionario-netinho/netinho.html">Netinho</a></li>
-      <li><a href="checklist/index.html">Checklist</a></li>
-    </ul>
-  </nav>
-
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="navbar-logo">
+        <img src="img/logo.png" alt="Logo SeniorShield">
+        <span>Senior<strong>Shield</strong></span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html" class="ativo">Início</a></li>
+        <li><a href="#golpes">Golpes</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+      </ul>
+    </nav>
+  </header>
+<hr>
   <section class="hero">
     <div class="hero-texto">
-      <span class="hero-badge">Proteção digital para idosos</span>
+      <span class="hero-badge">Proteção digital para quem mais importa</span>
       <h1>Você não está sozinho nessa! ❤️</h1>
       <p>O SeniorShield te ajuda a reconhecer golpes, aprender a se proteger e saber o que fazer se algo acontecer. Com calma, juntos.</p>
-      <div class="hero-btns">
-        <a href="checklist/index.html" class="btn-branco">Fazer meu checklist</a>
-        <a href="#golpes" class="btn-ghost">Ver os golpes</a>
-      </div>
     </div>
     <div class="hero-mascote">
       <img src="img/netinho.png" alt="Netinho" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
     </div>
   </section>
-  <div class="wave"></div>
-
+  
   <main>
 
+    <div id="texto_explicativo">
+
+
+    </div>
+
     <section id="golpes">
-      <p class="sec-label">Fique de olho</p>
-      <h2 class="sec-titulo">Principais tipos de golpe</h2>
-      <p id="descricao-geral" class="sec-descricao"></p>
-      <div id="acordeoes-container"></div>
+      <h1 id="titulo" class="texto">PRINCIPAIS TIPOS DE GOLPES</h1>
+      
+      <div id="descricao-geral" class="texto"></div>
+
+      <h2 id="tipos" class="texto">veja aqui os principais tipos de golpes e como se proteger:</h2>
+
+      <button class="accordion texto">
+        <div id="golpe-1"></div>
+      </button>
+      <div class="painel texto">
+        <div>
+          <div id="descricao-do-golpe1" class="texto"></div>  
+          <div id="sinais-do-golpe1" class="texto"></div>
+          <h3>
+            <div id="link-tutorial-abaixo1" class="texto"></div>
+          </h3>
+          <a id="link-1" href="" class="botão" target="_blank">ver tutorial</a>
+        </div>
+      </div>
+
+      <button class="accordion texto">
+        <div id="golpe-2"></div>
+      </button>
+      <div class="painel texto">
+        <div>
+          <div id="descricao-do-golpe2" class="texto"></div>  
+          <div id="sinais-do-golpe2" class="texto"></div>
+          <h3>
+            <div id="link-tutorial-abaixo2" class="texto"></div>
+          </h3>
+          <a id="link-2" href="" class="botão" target="_blank">ver tutorial</a>
+        </div>
+      </div>
+
+      <button class="accordion">
+        <div id="golpe-3"></div>
+      </button>
+      <div class="painel">
+        <div>
+          <div id="descricao-do-golpe3"></div>  
+          <div id="sinais-do-golpe3"></div>
+          <h3>
+            <div id="link-tutorial-abaixo3" class="texto"></div>
+          </h3>
+          <a id="link-3" href="" class="botão" target="_blank">ver tutorial</a>   
+        </div>
+      </div>
+
+      <button class="accordion">
+        <div id="golpe-4"></div>
+      </button>
+      <div class="painel">
+        <div>
+          <div id="descricao-do-golpe4"></div>  
+          <div id="sinais-do-golpe4"></div>
+          <h3>
+            <div id="link-tutorial-abaixo4"></div>
+          </h3>
+          <a id="link-4" href="" class="botão" target="_blank">ver tutorial</a>
+        </div>
+      </div>
+
+      <div id="fim_pagina" class="texto"></div>
     </section>
 
     <section id="ferramentas">
@@ -56,40 +114,64 @@
       <h2 class="sec-titulo">Ferramentas do SeniorShield</h2>
       <div class="tools-grid">
         <a class="tool-card" href="checklist/index.html">
-          <h3>Checklist de Risco</h3>
+          <h3> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e72a7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="9 11 12 14 22 4"></polyline>
+  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+</svg>
+ Checklist de Risco</h3>
           <p>Responda 8 perguntas e descubra se você está em risco.</p>
           <span class="tool-arrow">→</span>
         </a>
-        <a class="tool-card" href="cadastrar-golpe/index.html">
-          <h3>Registrar Golpe</h3>
+        <a class="tool-card" href="golpe/index.html">
+          <h3> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0f3f72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+  <line x1="12" y1="7" x2="12" y2="11"></line>
+  <line x1="12" y1="13" x2="12.01" y2="13"></line>
+</svg>
+ Registrar Golpe</h3>
           <p>Sofreu um golpe? Registre e ajude a alertar outras pessoas.</p>
           <span class="tool-arrow">→</span>
         </a>
         <a class="tool-card" href="boletim/index.html">
-          <h3>Gerar Boletim</h3>
-          <p>Texto pronto para registrar na delegacia virtual.</p>
-          <span class="tool-arrow">→</span>
-        </a>
-        <a class="tool-card" href="dicionario-netinho/dicionario.html">
-          <h3>Dicionário</h3>
-          <p>Entenda termos como phishing, malware e spoofing.</p>
+          <h3> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0f3f72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+  <line x1="9" y1="12" x2="15" y2="12"></line>
+  <line x1="9" y1="16" x2="13" y2="16"></line>
+</svg>
+  Gerar Boletim</h3>
+          <p>Texto pronto para registrar na delegacia virtual. 
+
+          </p>
           <span class="tool-arrow">→</span>
         </a>
         <a class="tool-card" href="golpe_tube/golpetube_main.html">
-          <h3>Golpe Tube</h3>
+          <h3> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1e72a7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+  <polygon points="10 8 16 11 10 14 10 8"></polygon>
+  <line x1="6" y1="21" x2="18" y2="21"></line>
+  <line x1="12" y1="17" x2="12" y2="21"></line>
+</svg>
+ Golpe Tube</h3>
           <p>Vídeos explicando como os golpes funcionam na prática.</p>
           <span class="tool-arrow">→</span>
         </a>
       </div>
     </section>
-
-    <p id="fim_pagina" class="fim-pagina"></p>
-
+<hr>
+<div id="grafico">
+  <h2>grafico com os golpes mais registrados em nosso site</h2>
+  
+<img src="img/grafico.png" alt="">
+</div>
+<hr>
+<div id="comentario">
+<h2>relatos de vitimas:</h2>
+<img src="img/comentarios.png" alt="">
+</div>
   </main>
 
-  <footer>
-  
-  </footer>
+  <footer>feito com carinho por SeniorShield</footer>
 
   <script src="java.js"></script>
 </body>
