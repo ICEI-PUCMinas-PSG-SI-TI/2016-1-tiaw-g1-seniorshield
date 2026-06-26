@@ -39,12 +39,12 @@ function renderizarGrafico(dados) {
         return;
     }
 
-    // Cores definidas para cada tipo de golpe
+    // Cores extraídas e adaptadas diretamente do banner do Netinho
     const cores = {
-        "Fraude de Consumo": "#1e72a7",
-        "Parceiro Virtual": "#2c83b9",
-        "Suposta Autoridade": "#0f3f72",
-        "Roubo de Dados": "#bcd7e9"
+        "Fraude de Consumo":   "#FDC600", // Amarelo-Ouro / Laranja do banner
+        "Parceiro Virtual":    "#86c5ff", // Azul Claro do fundo/título
+        "Suposta Autoridade":  "#1E4D68", // Azul Escuro do moletom
+        "Roubo de Dados":      "#2ecc71"  // Verde do escudo protetor
     };
 
     // Calcula os ângulos acumulados para montar as fatias da pizza
@@ -97,7 +97,6 @@ function renderizarGrafico(dados) {
 function renderizarComentarios(dados) {
     const listaComentarios = document.getElementById("lista-comentarios");
     
-    // Se o elemento não existir nesta página, não faz nada
     if (!listaComentarios) return;
 
     listaComentarios.innerHTML = "";
@@ -106,7 +105,6 @@ function renderizarComentarios(dados) {
     const dadosInvertidos = [...dados].reverse();
 
     dadosInvertidos.forEach(item => {
-        // Converte o formato YYYY-MM-DD para DD/MM/YYYY amigável
         const dataFormatada = item.data_ocorrencia.split('-').reverse().join('/');
 
         listaComentarios.innerHTML += `
@@ -130,7 +128,7 @@ if (formulario) {
         const nome = document.getElementById('nome-completo').value;
         const detalhesOcorrido = document.getElementById('email').value; 
         const golpeSofrido = document.getElementById('golpe-sofrido').value;
-        const valorPerdido = document.getElementById('valor-perdidio').value;
+        const valorPerdido = document.getElementById('valor-perdido').value; // CORRIGIDO: Removido o 'i' extra de 'valor-perdidio'
         const dataOcorrencia = document.getElementById('data-ocorrencia').value;
 
         fetch('http://localhost:3000/registro_golpes_sofridos')

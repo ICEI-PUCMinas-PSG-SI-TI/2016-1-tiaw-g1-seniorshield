@@ -402,6 +402,34 @@
       "valor_perdido": "78.0",
       "data_ocorrencia": "2012-02-12",
       "id": "SzmTxVb3bhA"
+    },
+    {
+      "id_golpe": "3",
+      "nome": "ILONE",
+      "tipo_golpe": "Suposta Autoridade",
+      "email": "teste",
+      "valor_perdido": "78.0",
+      "data_ocorrencia": "2025-12-12",
+      "id": "yxxguSewCR4"
+    },
+    {
+      "id_golpe": "4",
+      "nome": "ILONE",
+      "tipo_golpe": "Parceiro Virtual",
+      "email": "teste 2",
+      "valor_perdido": "78.0",
+      "data_ocorrencia": "2020-12-20",
+      "id": "pZpVt-cQ4NE"
+    },
+    {
+      "id_golpe": "5",
+      "nome": "illone",
+      "tipo_golpe": "Roubo de Dados",
+      "email": "teste 3\n",
+      "valor_perdido": "1222,00",
+      "data_ocorrencia": "2026-12-03",
+      "id": "PwVAZ831Pyc"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
