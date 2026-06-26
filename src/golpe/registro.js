@@ -15,6 +15,9 @@ function carregarEstatisticasERelatos() {
 function renderizarGrafico(dados) {
     const graficoBarras = document.getElementById("grafico-barras");
     
+    // Se o elemento não existir nesta página, não faz nada
+    if (!graficoBarras) return;
+
     // Mapeamento de contagem
     const contagemTipos = {
         "Fraude de Consumo": 0,
@@ -51,6 +54,10 @@ function renderizarGrafico(dados) {
 // Renderiza a lista de relatos simulando caixas de comentários
 function renderizarComentarios(dados) {
     const listaComentarios = document.getElementById("lista-comentarios");
+    
+    // Se o elemento não existir nesta página, não faz nada
+    if (!listaComentarios) return;
+
     listaComentarios.innerHTML = "";
 
     // Exibe do mais recente para o mais antigo
@@ -73,52 +80,54 @@ function renderizarComentarios(dados) {
     });
 }
 
-// "Escuta" o evento de envio (submit) do formulário
-formulario.addEventListener('submit', function(event) {
-    event.preventDefault();
+// "Escuta" o evento de envio (submit) do formulário apenas se ele existir na página
+if (formulario) {
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-    const nome = document.getElementById('nome-completo').value;
-    const detalhesOcorrido = document.getElementById('email').value; // Captura o texto do textarea
-    const golpeSofrido = document.getElementById('golpe-sofrido').value;
-    const valorPerdido = document.getElementById('valor-perdido').value;
-    const dataOcorrencia = document.getElementById('data-ocorrencia').value;
+        const nome = document.getElementById('nome-completo').value;
+        const detalhesOcorrido = document.getElementById('email').value; 
+        const golpeSofrido = document.getElementById('golpe-sofrido').value;
+        const valorPerdido = document.getElementById('valor-perdidio').value;
+        const dataOcorrencia = document.getElementById('data-ocorrencia').value;
 
-    fetch('http://localhost:3000/registro_golpes_sofridos')
-        .then(response => response.json())
-        .then(golpesExistentes => {
-            const proximoIdGolpe = String(golpesExistentes.length + 1);
+        fetch('http://localhost:3000/registro_golpes_sofridos')
+            .then(response => response.json())
+            .then(golpesExistentes => {
+                const proximoIdGolpe = String(golpesExistentes.length + 1);
 
-            const novoGolpe = {
-                id_golpe: proximoIdGolpe,
-                nome: nome,
-                tipo_golpe: golpeSofrido,
-                email: detalhesOcorrido, // Gravado na chave "email" do banco
-                valor_perdido: valorPerdido,
-                data_ocorrencia: dataOcorrencia
-            };
+                const novoGolpe = {
+                    id_golpe: proximoIdGolpe,
+                    nome: nome,
+                    tipo_golpe: golpeSofrido,
+                    email: detalhesOcorrido, 
+                    valor_perdido: valorPerdido,
+                    data_ocorrencia: dataOcorrencia
+                };
 
-            return fetch('http://localhost:3000/registro_golpes_sofridos', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(novoGolpe)
+                return fetch('http://localhost:3000/registro_golpes_sofridos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(novoGolpe)
+                });
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Muito obrigado! O golpe foi registrado com sucesso e ajudará a comunidade.");
+                    formulario.reset(); 
+                    carregarEstatisticasERelatos(); 
+                } else {
+                    alert("Poxa, ocorreu um erro ao registrar. Tente novamente mais tarde.");
+                }
+            })
+            .catch(error => {
+                console.error("Erro na requisição:", error);
+                alert("Erro de conexão. Verifique se o JSON Server está rodando no terminal.");
             });
-        })
-        .then(response => {
-            if (response.ok) {
-                alert("Muito obrigado! O golpe foi registrado com sucesso e ajudará a comunidade.");
-                formulario.reset(); 
-                carregarEstatisticasERelatos(); // Atualiza o gráfico e relatos na tela na hora!
-            } else {
-                alert("Poxa, ocorreu um erro ao registrar. Tente novamente mais tarde.");
-            }
-        })
-        .catch(error => {
-            console.error("Erro na requisição:", error);
-            alert("Erro de conexão. Verifique se o JSON Server está rodando no terminal.");
-        });
-});
+    });
+}
 
 // Carrega os componentes ao abrir a tela
 carregarEstatisticasERelatos();
