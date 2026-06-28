@@ -94,80 +94,123 @@ function renderizarGrafico(dados) {
 }
 
 // Renderiza a lista de relatos simulando caixas de comentários
+f// Variável global para controlar a página atual do carrossel
+let indexCarrosselAtual = 0;
+let relatosInvertidosGlobal = [];
+
+// Renderiza a lista de relatos simulando um carrossel dinâmico e elegante
 function renderizarComentarios(dados) {
     const listaComentarios = document.getElementById("lista-comentarios");
     
     if (!listaComentarios) return;
 
-    listaComentarios.innerHTML = "";
+    // Filtra e inverte a ordem para exibir do mais recente para o mais antigo
+    relatosInvertidosGlobal = [...dados].reverse();
 
-    // Exibe do mais recente para o mais antigo
-    const dadosInvertidos = [...dados].reverse();
+    if (relatosInvertidosGlobal.length === 0) {
+        listaComentarios.innerHTML = "<p style='text-align:center; color:#666;'>Nenhum relato enviado ainda.</p>";
+        return;
+    }
 
-    dadosInvertidos.forEach(item => {
-        const dataFormatada = item.data_ocorrencia.split('-').reverse().join('/');
+    // Reinicia o índice caso mude o tamanho dos dados
+    if (indexCarrosselAtual >= relatosInvertidosGlobal.length) {
+        indexCarrosselAtual = 0;
+    }
 
-        listaComentarios.innerHTML += `
-            <div style="background: #e4eeff; border-left: 6px solid #1e72a7; padding: 20px; border-radius: 0 12px 12px 0; margin-bottom: 16px;">
-                <div style="display: flex; justify-content: space-between; font-size: 16px; color: #555; margin-bottom: 8px;">
-                    <span style="background: #0f3f72; color: #fff; padding: 2px 10px; border-radius: 20px; font-size: 14px; font-weight: bold;">${item.tipo_golpe}</span>
-                    <span>Ocorrido em: ${dataFormatada}</span>
+    exibirSlideCarrossel();
+}
+
+// Função interna para atualizar visualmente o slide do carrossel
+function exibirSlideCarrossel() {
+    const listaComentarios = document.getElementById("lista-comentarios");
+    const item = relatosInvertidosGlobal[indexCarrosselAtual];
+    
+    // Converte o formato YYYY-MM-DD para DD/MM/YYYY
+    const dataFormatada = item.data_ocorrencia.split('-').reverse().join('/');
+
+    listaComentarios.innerHTML = `
+        <div style="
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            min-height: 200px;
+            background: #ffffff; 
+            border-top: 6px solid #1E4D68; 
+            padding: 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(15, 63, 114, 0.08);
+            margin: 10px auto 25px auto;
+            max-width: 700px;
+            position: relative;
+            animation: fadeInCarrossel 0.4s ease-in-out;
+        ">
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: #1E4D68; color: #fff; padding: 5px 14px; border-radius: 20px; font-size: 14px; font-weight: bold; letter-spacing: 0.5px;">
+                        ${item.tipo_golpe}
+                    </span>
+                    <span style="font-size: 14px; color: #7f8c8d; font-weight: 500;">
+                        📅 Ocorrido em: ${dataFormatada}
+                    </span>
                 </div>
-                <p style="font-size: 18px; color: #222; line-height: 1.6; font-style: italic;">"${item.email}"</p>
-                <span style="font-size: 14px; color: #666; display: block; margin-top: 5px;">Relatado por: ${item.nome}</span>
+                <p style="font-size: 19px; color: #2c3e50; line-height: 1.6; font-style: italic; margin-bottom: 20px; font-weight: 400;">
+                    "${item.email}"
+                </p>
             </div>
-        `;
-    });
+            
+            <div style="border-top: 1px solid #ecf0f1; padding-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 15px; color: #555; font-weight: 600;">
+                    👤 Relatado por: <span style="color: #1E4D68;">${item.nome}</span>
+                </span>
+                <span style="font-size: 14px; color: #bdc3c7; font-weight: bold;">
+                    ${indexCarrosselAtual + 1} de ${relatosInvertidosGlobal.length}
+                </span>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 10px;">
+            <button onclick="mudarSlideCarrossel(-1)" style="
+                background: #86c5ff; 
+                color: #1E4D68; 
+                border: none; 
+                padding: 10px 20px; 
+                border-radius: 30px; 
+                font-weight: bold; 
+                cursor: pointer; 
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                transition: all 0.2s;
+            " onmouseover="this.style.background='#1E4D68'; this.style.color='#fff'" onmouseout="this.style.background='#86c5ff'; this.style.color='#1E4D68'">
+                ◀ Anterior
+            </button>
+            
+            <button onclick="mudarSlideCarrossel(1)" style="
+                background: #FDC600; 
+                color: #1E4D68; 
+                border: none; 
+                padding: 10px 25px; 
+                border-radius: 30px; 
+                font-weight: bold; 
+                cursor: pointer; 
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                transition: all 0.2s;
+            " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Próximo ▶
+            </button>
+        </div>
+    `;
 }
 
-// "Escuta" o evento de envio (submit) do formulário apenas se ele existir na página
-if (formulario) {
-    formulario.addEventListener('submit', function(event) {
-        event.preventDefault();
+// Função para avançar ou voltar no carrossel
+function mudarSlideCarrossel(direcao) {
+    indexCarrosselAtual += direcao;
 
-        const nome = document.getElementById('nome-completo').value;
-        const detalhesOcorrido = document.getElementById('email').value; 
-        const golpeSofrido = document.getElementById('golpe-sofrido').value;
-        const valorPerdido = document.getElementById('valor-perdido').value; // CORRIGIDO: Removido o 'i' extra de 'valor-perdidio'
-        const dataOcorrencia = document.getElementById('data-ocorrencia').value;
+    // Loop do carrossel (volta ao início se passar do fim, ou vai para o fim se voltar do início)
+    if (indexCarrosselAtual >= relatosInvertidosGlobal.length) {
+        indexCarrosselAtual = 0;
+    }
+    if (indexCarrosselAtual < 0) {
+        indexCarrosselAtual = relatosInvertidosGlobal.length - 1;
+    }
 
-        fetch('http://localhost:3000/registro_golpes_sofridos')
-            .then(response => response.json())
-            .then(golpesExistentes => {
-                const proximoIdGolpe = String(golpesExistentes.length + 1);
-
-                const novoGolpe = {
-                    id_golpe: proximoIdGolpe,
-                    nome: nome,
-                    tipo_golpe: golpeSofrido,
-                    email: detalhesOcorrido, 
-                    valor_perdido: valorPerdido,
-                    data_ocorrencia: dataOcorrencia
-                };
-
-                return fetch('http://localhost:3000/registro_golpes_sofridos', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(novoGolpe)
-                });
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert("Muito obrigado! O golpe foi registrado com sucesso e ajudará a comunidade.");
-                    formulario.reset(); 
-                    carregarEstatisticasERelatos(); 
-                } else {
-                    alert("Poxa, ocorreu um erro ao registrar. Tente novamente mais tarde.");
-                }
-            })
-            .catch(error => {
-                console.error("Erro na requisição:", error);
-                alert("Erro de conexão. Verifique se o JSON Server está rodando no terminal.");
-            });
-    });
+    exibirSlideCarrossel();
 }
-
-// Carrega os componentes ao abrir a tela
-carregarEstatisticasERelatos();
