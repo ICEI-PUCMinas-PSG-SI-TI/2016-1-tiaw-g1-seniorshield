@@ -536,7 +536,7 @@ footer strong {
 
 .chat-body {
   padding: 20px;
-  height: 350px;
+  height: 300px;
   overflow-y: auto;
   background: #f5f7fa;
   display: flex;
