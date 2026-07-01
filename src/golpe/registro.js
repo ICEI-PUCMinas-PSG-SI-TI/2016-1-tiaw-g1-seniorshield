@@ -214,3 +214,6 @@ function mudarSlideCarrossel(direcao) {
 
     exibirSlideCarrossel();
 }
+document.addEventListener("DOMContentLoaded", () => {
+    carregarEstatisticasERelatos();
+});
