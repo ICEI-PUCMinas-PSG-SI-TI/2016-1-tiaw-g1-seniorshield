@@ -17,4 +17,4 @@ https://canva.link/pbye55w4omggd3n
 
 ## Vídeo
 
-No caso de apresentação gravada, insira aqui o link do vídeo de apresentação.
+[No caso de apresentação gravada, insira aqui o link do vídeo de apresentação.](https://youtu.be/jBFZwzvTvhg)
